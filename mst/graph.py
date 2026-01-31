@@ -59,7 +59,7 @@ class Graph:
         while heap and not all(visited):
             w, u, v = heapq.heappop(heap)
 
-            # skip edges leading to already-visited vertices
+            # skip edges leading to already visited vertices
             if visited[v]:
                 continue
 
